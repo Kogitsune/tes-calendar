@@ -2,22 +2,23 @@
   "schemaVersion": 1,
   "id": "tes_calendar",
   "version": "${version}",
-
   "name": "TES Calendar",
   "description": "",
-  "authors": [],
-  "contact": {},
-
+  "authors": ["DrEmily", "Bethesda (technically)"],
+  "contact": {
+    "repo": ""
+  },
   "license": "MIT",
   "icon": "assets/tes_calendar/icon.png",
-
   "environment": "server",
-  "entrypoints": {},
-
-
+  "entrypoints": {
+    "main": [
+      "it.burns.tes_calendar.TESCalendar"
+    ]
+  },
   "depends": {
     "fabricloader": ">=${loader_version}",
-        "fabric": "*",
+    "fabric": "*",
     "minecraft": "${minecraft_version}"
   }
 }
